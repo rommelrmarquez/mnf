@@ -1,11 +1,11 @@
-# About
+### About
 This repository includes two scripts (1) perf.py (2) covid.py.
 
-# Dependencies
+### Dependencies
 
 `pip install -r requirements.txt`
 
-# perf.py 
+### perf.py 
 Format: perf.py -l -j host
 
 positional arguments:
@@ -22,12 +22,12 @@ optional arguments:
                         Max jitter limit before considered critical
 
 
-# Example
+### Example
 `python perf.py -l 25 google.com`
 
 output: `HOST NOT_OK - rtt=33.969 ms | OK - jitter=4.666 ms`
 
-# covid.py
+### covid.py
 Calls an API to get the global total number of covid cases.
 
 usage: covid.py [options]
@@ -41,7 +41,7 @@ optional arguments:
   
   `--recovered`  Include recovered cases
   
-  # Example
+  ### Example
   `python covid.py`
   
   output: `[2021-07-22 23:05:36] 200 CASES - 193007589`
@@ -50,5 +50,5 @@ optional arguments:
   
   output: `[2021-07-22 23:05:36] 200 CASES - 193007589 | active: 13377552`
   
-  # Credits
+  ### Credits
   Covid data API: `https://corona.lmao.ninja/v2/all?yesterday`
